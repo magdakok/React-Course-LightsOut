@@ -95,7 +95,10 @@ class Board extends Component {
   /** Render game board or winning message. */
 
   render() {
-    if(this.state.hasWon) { return <h1>You won!</h1> }
+    if(this.state.hasWon) { return <div>
+      <span className="neon">You</span>
+      <span className="flux">Won</span>
+      </div> }
     let tblBoard = [];
     for (let r=0; r < this.props.nrows; r++){
       let row = [];
@@ -107,11 +110,15 @@ class Board extends Component {
     }
 
     return(
-      <table className="Board">
-        <tbody>
-          {tblBoard}
-        </tbody>
-      </table>
+      <div>
+        <span className="neon">Lights</span>
+        <span className="flux">Out</span>
+        <table className="Board">
+          <tbody>
+            {tblBoard}
+          </tbody>
+        </table>
+      </div>
     )
 
     // if the game is won, just show a winning msg & render nothing else
