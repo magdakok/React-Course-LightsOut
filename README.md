@@ -2,7 +2,7 @@
 
 ## :movie_camera: https://magdakok.github.io/React-Course-LightsOut/
 
-**Lights Out is a logic/puzzle game, played on a gird of individual lights, which can either be lit or unlit. The puzzle is won when when all of the lights are turned off. **
+Lights Out is a logic/puzzle game, played on a gird of individual lights, which can either be lit or unlit. The puzzle is won when when all of the lights are turned off.
 
 ---
 
